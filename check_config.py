@@ -1,31 +1,35 @@
 import argparse
-from huggingface_hub import hf_hub_download, HfApi
+from huggingface_hub import HfApi, snapshot_download
 import json
+import os
 
-ATTENTION_BLOCK_CLASSES = ['VQModel', 'AutoencoderKL', 'UNet2DModel', 'UNet2DConditionModel']
+ATTENTION_BLOCK_CLASSES = [
+    "VQModel",
+    "AutoencoderKL",
+    "UNet2DModel",
+    "UNet2DConditionModel",
+]
 
 BLOCKS_WITH_DEPRECATED_ATTENTION = [
-    'AttnDownBlock2D',
-    'AttnSkipDownBlock2D',
-    'AttnDownEncoderBlock2D',
-    'AttnUpBlock2D',
-    'AttnSkipUpBlock2D',
-    'AttnUpDecoderBlock2D',
-    'UNetMidBlock2D',
+    "AttnDownBlock2D",
+    "AttnSkipDownBlock2D",
+    "AttnDownEncoderBlock2D",
+    "AttnUpBlock2D",
+    "AttnSkipUpBlock2D",
+    "AttnUpDecoderBlock2D",
+    "UNetMidBlock2D",
 ]
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument(
-        "--output",
-        required=True,
-        type=str
-    )
+    parser.add_argument("--output", required=True, type=str)
 
     args = parser.parse_args()
 
     return args
+
 
 def main(args):
     api = HfApi()
@@ -37,17 +41,26 @@ def main(args):
     hub_uploads_with_deprecated_attention_blocks = {}
 
     for hub_upload_id in hub_upload_ids:
-        models_with_deprecated_attention_blocks = find_deprecated_attention(hub_upload_id)
+        print(f"checking hub upload: {hub_upload_id}")
+
+        models_with_deprecated_attention_blocks = find_deprecated_attention(
+            hub_upload_id
+        )
 
         if len(models_with_deprecated_attention_blocks) == 0:
+            print(f"no deprecated attention blocks in {hub_upload_id}")
             continue
 
         print(f"deprecated attention blocks in hub upload {hub_upload_id}")
 
-        hub_uploads_with_deprecated_attention_blocks[hub_upload_id] = models_with_deprecated_attention_blocks
+        hub_uploads_with_deprecated_attention_blocks[
+            hub_upload_id
+        ] = models_with_deprecated_attention_blocks
 
-    hub_uploads_with_deprecated_attention_blocks = json.dumps(hub_uploads_with_deprecated_attention_blocks, indent=4)
- 
+    hub_uploads_with_deprecated_attention_blocks = json.dumps(
+        hub_uploads_with_deprecated_attention_blocks, indent=4
+    )
+
     with open(args.output, "w") as outfile:
         outfile.write(hub_uploads_with_deprecated_attention_blocks)
 
@@ -64,51 +77,85 @@ def diffusers_hub_uploads(api):
 
     return hub_upload_ids
 
+
 def find_deprecated_attention(hub_upload_id):
-    model_index_path = hf_hub_download(
-        hub_upload_id,
-        filename="model_index.json"
-    )
+    models_with_deprecated_attention_blocks = []
 
-    with open(model_index_path) as f:
-        model_index: dict = json.load(f)
+    snapshot_path = snapshot_download(hub_upload_id, allow_patterns="*.json")
 
-    models_with_deprecated_attention_blocks = {}
+    model_index_path = os.path.join(snapshot_path, "model_index.json")
 
-    for key, value in model_index.items():
-        if not isinstance(value, list):
-            continue
+    if os.path.isfile(model_index_path):
+        with open(model_index_path) as f:
+            model_index: dict = json.load(f)
 
-        klass = value[1]
+        for model_key, value in model_index.items():
+            if not isinstance(value, list):
+                continue
 
-        if klass not in ATTENTION_BLOCK_CLASSES:
-            continue
+            klass_name = value[1]
 
-        klass_config_path = hf_hub_download(
-            args.repo_name,
-            filename=f"{key}/config.json"
-        )
+            is_model_deprecated_ = is_model_deprecated(
+                klass_name=klass_name, snapshot_path=snapshot_path, model_key=model_key
+            )
 
-        with open(klass_config_path) as f:
-            klass_config: dict = json.load(f)
+            if is_model_deprecated_:
+                models_with_deprecated_attention_blocks.append(
+                    {"klass_name": klass_name, "model_key": model_key}
+                )
+    else:
+        model_path = os.path.join(snapshot_path, "config.json")
 
-        down_block_types = klass_config['down_block_types']
-        up_block_types = klass_config['up_block_types']
+        if os.path.isfile(model_path):
+            # root level model
 
-        deprecated_attention_block = False
+            with open(model_path) as f:
+                model = json.load(f)
 
-        for down_block_type in down_block_types:
-            if down_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
-                deprecated_attention_block = True
+            klass_name = model["_class_name"]
 
-        for up_block_type in up_block_types:
-            if up_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
-                deprecated_attention_block = True
+            is_model_deprecated_ = is_model_deprecated(
+                klass_name=klass_name, snapshot_path=snapshot_path
+            )
 
-        if deprecated_attention_block:
-            models_with_deprecated_attention_blocks[key] = klass
+            if is_model_deprecated_:
+                models_with_deprecated_attention_blocks.append(
+                    {"klass_name": klass_name}
+                )
+
+        else:
+            raise ValueError("No root level `model_index.json` or `config.json` found")
 
     return models_with_deprecated_attention_blocks
+
+
+def is_model_deprecated(*args, klass_name, snapshot_path, model_key=None):
+    if klass_name not in ATTENTION_BLOCK_CLASSES:
+        return False
+
+    if model_key is not None and os.path.isdir(os.path.join(snapshot_path, model_key)):
+        klass_config_path = os.path.join(snapshot_path, model_key, "config.json")
+    else:
+        klass_config_path = os.path.join(snapshot_path, "config.json")
+
+    with open(klass_config_path) as f:
+        klass_config: dict = json.load(f)
+
+    down_block_types = klass_config["down_block_types"]
+    up_block_types = klass_config["up_block_types"]
+
+    deprecated_attention_block = False
+
+    for down_block_type in down_block_types:
+        if down_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
+            deprecated_attention_block = True
+
+    for up_block_type in up_block_types:
+        if up_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
+            deprecated_attention_block = True
+
+    if deprecated_attention_block:
+        return True
 
 
 if __name__ == "__main__":
