@@ -41,6 +41,10 @@ def parse_args():
     )
 
     parser.add_argument(
+        "--malformed_repos_output", required=False, default=None, type=str
+    )
+
+    parser.add_argument(
         "--hub_uploads_load_from_file",
         required=False,
         type=str,
@@ -83,6 +87,7 @@ def main(args):
 
     hub_uploads_with_deprecated_attention_blocks = {}
     requires_license = []
+    malformed_repos = []
 
     for hub_upload_id in hub_upload_ids:
         print(f"checking hub upload: {hub_upload_id}")
@@ -104,6 +109,7 @@ def main(args):
         )
 
         if models_with_deprecated_attention_blocks is None:
+            malformed_repos.append(hub_upload_id)
             continue
 
         if len(models_with_deprecated_attention_blocks) == 0:
@@ -137,6 +143,14 @@ def main(args):
 
         with open(args.requires_license_output, "w") as f:
             f.write(requires_license)
+
+    if args.malformed_repos_output is None:
+        print("skipping writing malformed repos")
+    else:
+        print(f"writing malformed repos to {args.malformed_repos_output}")
+
+        with open(args.malformed_repos_output, "w") as f:
+            f.write(malformed_repos)
 
 
 def diffusers_hub_uploads(*args, api, skip_hub_ids):
