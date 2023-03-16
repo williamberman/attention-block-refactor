@@ -30,7 +30,17 @@ def parse_args():
     parser.add_argument("--requires_license_output", required=True, type=str)
 
     parser.add_argument(
-        "--hub_uploads_load_from_file", required=False, type=str, default=None
+        "--hub_uploads_load_from_file",
+        required=False,
+        type=str,
+        default=None,
+    )
+
+    parser.add_argument(
+        "--skip_file",
+        required=False,
+        type=str,
+        default=None,
     )
 
     args = parser.parse_args()
@@ -41,17 +51,22 @@ def parse_args():
 def main(args):
     api = HfApi()
 
-    if args.hub_uploads_load_from_file is None:
-        hub_upload_ids = diffusers_hub_uploads(api)
-    else:
-        hub_upload_ids = []
+    skip_hub_ids = set()
 
-        with open(args.hub_uploads_load_from_file) as f:
+    if args.skip_file is not None:
+        with open(args.skip_file) as f:
             for line in f.readlines():
                 line = line.strip()
 
                 if len(line) != 0:
-                    hub_upload_ids.append(line)
+                    skip_hub_ids.add(line)
+
+    if args.hub_uploads_load_from_file is None:
+        hub_upload_ids = diffusers_hub_uploads(api=api, skip_hub_ids=skip_hub_ids)
+    else:
+        hub_upload_ids = hub_uploads_from_file(
+            filename=args.hub_uploads_load_from_file, skip_hub_ids=skip_hub_ids
+        )
 
     print(f"number diffusers hub uploads: {len(hub_upload_ids)}")
 
@@ -103,7 +118,7 @@ def main(args):
         f.write(requires_license)
 
 
-def diffusers_hub_uploads(api):
+def diffusers_hub_uploads(*args, api, skip_hub_ids):
     # pull all diffusers compatible models from hub
     diffusers_models = api.list_models(filter="diffusers")
 
@@ -111,7 +126,27 @@ def diffusers_hub_uploads(api):
 
     for diffusers_model in diffusers_models:
         hub_id = diffusers_model.modelId
-        hub_upload_ids.append(hub_id)
+
+        if hub_id in skip_hub_ids:
+            print(f"skipping {hub_id}")
+        else:
+            hub_upload_ids.append(hub_id)
+
+    return hub_upload_ids
+
+
+def hub_uploads_from_file(*args, filename, skip_hub_ids):
+    hub_upload_ids = []
+
+    with open(filename) as f:
+        for line in f.readlines():
+            line = line.strip()
+
+            if len(line) != 0:
+                if line in skip_hub_ids:
+                    print(f"skipping {line}")
+                else:
+                    hub_upload_ids.append(line)
 
     return hub_upload_ids
 
