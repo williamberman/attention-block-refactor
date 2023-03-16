@@ -21,13 +21,24 @@ BLOCKS_WITH_DEPRECATED_ATTENTION = [
     "UNetMidBlock2D",
 ]
 
+UNET_1D_DOWN_BLOCKS = [
+    "DownResnetBlock1D",
+    "DownBlock1D",
+    "AttnDownBlock1D",
+    "DownBlock1DNoSkip",
+]
+
+UNET_1D_UP_BLOCKS = ["UpResnetBlock1D", "UpBlock1D", "AttnUpBlock1D", "UpBlock1DNoSkip"]
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--output", required=True, type=str)
+    parser.add_argument("--output", required=False, default=None, type=str)
 
-    parser.add_argument("--requires_license_output", required=True, type=str)
+    parser.add_argument(
+        "--requires_license_output", required=False, default=None, type=str
+    )
 
     parser.add_argument(
         "--hub_uploads_load_from_file",
@@ -111,11 +122,21 @@ def main(args):
 
     requires_license = json.dumps(requires_license, indent=4)
 
-    with open(args.output, "w") as f:
-        f.write(hub_uploads_with_deprecated_attention_blocks)
+    if args.output is None:
+        print("skipping writing outputs")
+    else:
+        print(f"writing outputs to {args.output}")
 
-    with open(args.requires_license_output, "w") as f:
-        f.write(requires_license)
+        with open(args.output, "w") as f:
+            f.write(hub_uploads_with_deprecated_attention_blocks)
+
+    if args.requires_license_output is None:
+        print("skipping writing requires license")
+    else:
+        print(f"writing requires license to {args.requires_license_output}")
+
+        with open(args.requires_license_output, "w") as f:
+            f.write(requires_license)
 
 
 def diffusers_hub_uploads(*args, api, skip_hub_ids):
@@ -183,7 +204,11 @@ def find_deprecated_attention(snapshot_path):
 
 def load_from_model_index(*args, snapshot_path, model_index_path, nested_path=None):
     with open(model_index_path) as f:
-        model_index: dict = json.load(f)
+        try:
+            model_index: dict = json.load(f)
+        except json.decoder.JSONDecodeError as e:
+            print(f"encountered bad json: {e.msg}")
+            return []
 
     models_with_deprecated_attention_blocks = []
 
@@ -209,12 +234,16 @@ def load_from_model_index(*args, snapshot_path, model_index_path, nested_path=No
 
 
 def load_from_root_level_model(*args, snapshot_path, model_path):
+    with open(model_path) as f:
+        try:
+            model = json.load(f)
+        except json.decoder.JSONDecodeError as e:
+            print(f"encountered bad json: {e.msg}")
+            return []
+
     models_with_deprecated_attention_blocks = []
 
-    with open(model_path) as f:
-        model = json.load(f)
-
-    klass_name = model["_class_name"]
+    klass_name = model.get("_class_name", None)
 
     is_model_deprecated_ = is_model_deprecated(
         klass_name=klass_name, snapshot_path=snapshot_path
@@ -227,9 +256,9 @@ def load_from_root_level_model(*args, snapshot_path, model_path):
 
 
 def is_model_deprecated(
-    *args, klass_name, snapshot_path, model_key=None, nested_path=None
+    *args, snapshot_path, model_key=None, nested_path=None, klass_name=None
 ):
-    if klass_name not in ATTENTION_BLOCK_CLASSES:
+    if klass_name is not None and klass_name not in ATTENTION_BLOCK_CLASSES:
         return False
 
     if nested_path is None:
@@ -249,21 +278,75 @@ def is_model_deprecated(
     with open(klass_config_path) as f:
         klass_config: dict = json.load(f)
 
-    down_block_types = klass_config["down_block_types"]
-    up_block_types = klass_config["up_block_types"]
+    # HACK - the config file loaded for this model is for a CLIPTextEncoder regardless of
+    # what model we think we should be looking at. Therefore, we can just early return.
+    if "architectures" in klass_config and klass_config["architectures"] == [
+        "CLIPTextModel"
+    ]:
+        return False
 
-    deprecated_attention_block = False
+    down_block_types = klass_config.get("down_block_types", None)
+    up_block_types = klass_config.get("up_block_types", None)
 
-    for down_block_type in down_block_types:
-        if down_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
-            deprecated_attention_block = True
-
-    for up_block_type in up_block_types:
-        if up_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
-            deprecated_attention_block = True
-
-    if deprecated_attention_block:
+    if klass_name == "VQModel":
+        # is always deprecated because of the encoder and decoder mid block
         return True
+    elif klass_name == "AutoencoderKL":
+        # is always deprecated because of the encoder and decoder mid block
+        return True
+    elif klass_name == "UNet2DModel":
+        if down_block_types is None:
+            # The default block types have deprecated attention blocks
+            return True
+
+        for down_block_type in down_block_types:
+            if down_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
+                return True
+
+        if up_block_types is None:
+            # The default block types have deprecated attention blocks
+            return True
+
+        for up_block_type in up_block_types:
+            if up_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
+                return True
+
+        return False
+    elif klass_name == "UNet2DConditionModel":
+        if down_block_types is not None:
+            for down_block_type in down_block_types:
+                if down_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
+                    return True
+
+        if up_block_types is not None:
+            for up_block_type in up_block_types:
+                if up_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
+                    return True
+
+        return False
+    elif klass_name is None:
+        if is_model_1d_unet(
+            down_block_types=down_block_types, up_block_types=up_block_types
+        ):
+            return False
+
+        assert False
+    else:
+        assert False
+
+
+def is_model_1d_unet(*args, down_block_types, up_block_types):
+    if down_block_types is not None:
+        for block_type in UNET_1D_DOWN_BLOCKS:
+            if block_type in down_block_types:
+                return True
+
+    if up_block_types is not None:
+        for block_type in UNET_1D_UP_BLOCKS:
+            if block_type in up_block_types:
+                return True
+
+    return False
 
 
 if __name__ == "__main__":
