@@ -1,0 +1,6221 @@
+{
+    "google/ddpm-cifar10-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "CompVis/ldm-celebahq-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ddpm-ema-bedroom-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ncsnpp-ffhq-1024": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ncsnpp-bedroom-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ncsnpp-celebahq-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ncsnpp-church-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ncsnpp-ffhq-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ddpm-cat-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ddpm-celebahq-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ddpm-ema-celebahq-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ddpm-church-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ddpm-bedroom-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ddpm-ema-church-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "google/ddpm-ema-cat-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fusing/ddpm_dummy_update": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fusing/ncsnpp-ffhq-ve-dummy-update": [
+        {
+            "klass_name": "UNet2DModel"
+        }
+    ],
+    "anton-l/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anton-l/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mrm8488/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bert-bits/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bert-bits/ddpm-butterflies-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mrm8488/ddpm-ema-flower-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mrm8488/ddpm-ema-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ceyda/ddpm-ema-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "verkaDerkaDerk/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "osanseviero/my-llamas": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "osanseviero/my-llama": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "osanseviero/my-aurora": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nateraw/my-aurora": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lmazzon70/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "puffy310/SimulacraModel-DDPM": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "puffy310/ddpm-dalldata": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Zer0/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "srpapa/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Seiilaa/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jirtan/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mrm8488/ddpm-ema-anime-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "puffy310/DallData-DDPMModel": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mrm8488/ddpm-ema-anime-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mrm8488/ddpm-ema-pokemon-v2-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jirtan/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "samwit/ddpm-afhq-cats-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mrm8488/ddpm-ema-anime-v2-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Qilex/VirtualPetDiffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AntioxVII/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rdruce/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rdruce/ddpm-cheese-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Qilex/VirtualPetDiffusion2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bhaskar75/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "quadpartisan/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pcuenq/ddpm-ema-pets-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mohammadhadiarabi/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "DavidNovikov/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mvicentel/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rdruce/ddpm-flowers-128-2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "eugeneware/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ryu2/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "marmot/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "eugeneware/ddpm-cats-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shalpin87/diffusion_celeba": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "knok/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rdruce/ddpm-celeb-128": [
+        {
+            "klass_name": "UNet2DModel"
+        }
+    ],
+    "teticio/audio-diffusion-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Nikuson/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "helgespieker/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shalpin87/diffusion_cifar": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "FusionLi/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "verkaDerkaDerk/tiki-based-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sam2ai/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shabohin/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ny7777/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ny7777/ddpm-pokemon-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rishistyping/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Norod78/ddpm-EmojiAlignedFaces-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tgawron/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "verkaDerkaDerk/tiki-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "darthdeus/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sycee/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jsingh/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "r3dzon3/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ichibanm/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "vinrougeed/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "IbrahimMavus/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "IbrahimMavus/ddpm-butterflies-129": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dboshardy/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "luccazen/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "wrice/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dboshardy/ddim-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "muyang/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yuntian-deng/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dumpbutnotdumb/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "thliang01/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dataaiwest/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bnsh/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "UKI001/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "teticio/audio-diffusion-breaks-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "akrisroof/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "himinomaha/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "artfrontier/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fffhyyhh666/Mouth-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "HaloMaster/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sreerajr000/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xud/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "VioletaMG/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "VioletaMG/ddpm-butterflies-128_50epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nawage/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tsubame/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "js05212/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "livingmagic/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "VioletaMG/dtu-scan114-128_50epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "VioletaMG/dogetest-128_50epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "iramshiv/dress-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nawage/dragons-test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Wakeme/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "surrealist/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "DCCCXIX/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Estwld/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Darrel/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "johnini/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rhizomuser/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tsubame/ddpm-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lohsinyuu/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "novacygni/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ighita/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Cyanogenoid/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tahahah/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Berk/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "germanjke/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tasotaku/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bhorine/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tian7/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "matnun/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "surfingdoggo/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sbatova/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dragynir/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "elice/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nielsr/absorbing-diffusion-churches": [
+        {
+            "klass_name": "VQModel",
+            "model_key": "vae"
+        }
+    ],
+    "waltwang441/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sreerajr000/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sreerajr000/ddpm-ema-fairface-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rvidaurre/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hf-internal-testing/unet-pipeline-dummy": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-cnv-1000-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-dme-1000-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-drusen-1000-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "teticio/audio-diffusion-instrumental-hiphop-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "triton7777/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Ravneet/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-normal-2000-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-cnv-2000-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-dme-2000-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-drusen-2000-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "10nen/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "MagoMerlot/ddpm-mariposas-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "thenickestnick/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-normal-1000-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-cnv-1000-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-dme-1000-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-drusen-1000-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mlyuya/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rolandwu/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Skiittoo/ddpm-pixelart": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "minchul/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mertcobanov/audio-diffusion-256-single-test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pcuenq/ddpm-ema-pets-64-no-tcond": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pcuenq/ddpm-ema-pets-64-repeat": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mertcobanov/mozart-diff-small-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pcuenq/ddpm-ema-cifar": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rycont/emoji-diffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Umar99/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-cnv-1500-300ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "robinoud/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bilginAZ/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yemoncad/peripheral_blood": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aminemih/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-cnv-10k-1000ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ClassCat/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sharmaannapurna/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-dme-10k-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Trojanku/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/wet": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-drusen-10k-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-cnv-10k-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-geeve-normal-10k-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anton-l/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pcuenq/debug-training-output": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "CavenLen/ddpm-Kaga-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yhyxgwy/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkuoct-wamd-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "LobTech/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "MagoMerlot/PSFs_generated": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkuoct-wamd-300ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkuoct-wamd-500ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pcuenq/ddpm-face-latents-16-100": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jmamou/ddpm-ema-flowers-64-distil-2layers": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jmamou/ddpm-ema-flowers-64-distil-4layers": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jeonsworld/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "DavidYun/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkuoct-wamd-1000ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yinxing/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/tjkicksmodel3": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkuoct-wamd-2000ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dbocanegrac/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "teticio/audio-diffusion-ddim-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "wd255/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Dimitre/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Dimitre/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Dimitre/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gnbk/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zp2222/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jangmin/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Nicole1228/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "iwintory/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dhshin/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "judaschrist/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mattgabriel/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gstqtfr/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yucao16/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "echo840/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "chredl/Diffusion_Model_Vol_Surface": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "roborovski/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Negs/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anton-l/ddpm-ema-flowers-64-test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "roborovski/ddpm-coastlines-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkuoct-dr-256-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkuoct-exu-256-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkuoct-exu-128-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Veit/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "0x7f/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yizhangliu/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "uripper/GIANNIS": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "memento/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fay/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "emendes3/cancer_diffusion_model_pituitary": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "roundy/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jbk1/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Libert/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/customdbmodelv3": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "microsoft/vq-diffusion-ithq": [
+        {
+            "klass_name": "VQModel",
+            "model_key": "vqvae"
+        }
+    ],
+    "geevegeorge/customdbmodelv4": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pds/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mute781/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pcuenq/ddpm-fashion-100": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "duongna/ldm-super-resolution": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "royam0820/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nicholaspapa/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/customdbmodelv6": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "misterbrainley/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Penn/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Haifeng1999/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kueltzho/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "arjunchandra/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "teticio/latent-audio-diffusion-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/customdbmodelv7": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "teticio/latent-audio-diffusion-ddim-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ThrinathMphasis/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Iwillbeback/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "danradyush/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yunan/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zugp/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dimpo/ddpm-mnist": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/dry_samples": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fusing/rdm": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "understaters/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KarlSangwon/output": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alexcaillet/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "JerryST/ddpm_ZUN_Faces": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aorhan/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "imraan/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Chalet37/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alibidaran/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ReKarma/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "CompVis/ldm-super-resolution-4x-openimages": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "qcs/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "EnesPux/1fotomodel": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Jason-4/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/dry_samples_test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/dry_samples_train": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/dry_samples_train_100": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "johnowhitaker/ddpm-butterflies-32px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tglcourse/ddpm-butterflies-64px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ocean-chicken/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/128-NORMAL": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ejarkm/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/128-DRUSEN-CELL": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/128-DRUSEN-cell_": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ty-troy/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/128-CNV-cell": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Omerdor/128-DRY-iCHILOV": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dn-gh/ddpm-apes-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Williamlokok/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xin1/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mike008/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anguszhang/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gcrssr/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "atsunobu/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "arkmand/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "IGKKR/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "joytafty/ddpm-sroie": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pagh/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tenpha/ddpm-taobao": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yunseokj/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "blackpansuto/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-butterflies-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "DONG19/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gavincapriola/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "DONG19/output": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Dimus/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "caffeinism/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "wangjksjtu/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "BestJuly/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gwz0202/ddpm-butterflied-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mskolesnikov/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "heziiiii/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SherlockHolmes/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "chrisway613/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "emendes3/cancer_diffusion_model_notumor": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xiaoxiao012/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "chrisway613/ddpm-pokemon-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "deepBiz/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lanyuer/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "emendes3/cancer_diffusion_model_glioma": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "emendes3/cancer_diffusion_model_meningioma": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "emendes3/cancer_diffusion_model_pituitary_new": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lewtun/sd-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lewtun/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "miin/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tjrdnjs1534/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "GongChen/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lewtun/sd-class-butterflies-32-test1": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lewtun/sd-class-butterflies-32-test2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lewtun/sd-class-butterflies-64-test3": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jfjensen/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jfjensen/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "laroy23/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "arrandi/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AdelZakirov/sd-class-butterflies-42": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lewtun/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "LuisQ/LuisQ_sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KidTheCat/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "LuisQ/LuisQ_sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "antgrutta/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mostafahaggag/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "FrancoisDongier/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Akriel/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SwePalm/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "CyantifiCQ/noisy_butterflied_diffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rmartinshort/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SwePalm/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "michaelmayo704/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "michaelmayo704/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ignacioiglesias/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "amolensc/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "monkseal555/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ali97/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dogeplusplus/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "drool/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Pramodith/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "drool/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "joweyel/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "matan-diamond/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "matan-diamond/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ryvalenza/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jl8771/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "cjp/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nagais/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "JulianBons/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shivammehta007/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kaizerkam/sd-class-comics-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "thliang01/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ajar01/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "thliang01/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lily-phoo-95/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lily-phoo-95/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "msilva/mapas_generados_ddpm": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sudipta002/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "atineoSE/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "epsil/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "epsil/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "atineoSE/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aleksandrinvictor/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "joweyel/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ikanher/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tetraquarky/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jl8771/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AlexChe/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AlexChe/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "davidaponte/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ben765/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Glen/sd-class-butterflies-32-gf": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "EricJai/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "darrenshu/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ykhwang/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ykhwang/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sonicviz/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Vincent-luo/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sonicviz/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lukasHoel/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Vincent-luo/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kzipa/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kzipa/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kzipa/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aareblau/diffusers-tutorial-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aareblau/diffusers-tutorial-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yorko/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "juancopi81/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "juancopi81/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tetraquarky/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alexrofail/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Didier/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "vitaliye/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Didier/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkiskoudounas/sd-butterflies-32px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "noobmldude/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkiskoudounas/sd-butterflies-64px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yixiaoxu/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hizak/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yanezh/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kzipa/ddpm-butterflies-128-retrain": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hizak/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "TsaiiasT/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkiskoudounas/sd-butterflies-128px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bowwwave/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "exiomius/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "VlakoResker/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bowwwave/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "exiomius/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "GV05/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shahukareem/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shahukareem/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "juancopi81/sd-class-cryptopunks-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Belyaev/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aleccharb21/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dskill/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nrsmac/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Randyarl/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkiskoudounas/sd-aurora-128px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jairNeto/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jairNeto/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dfomin/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "msilva/mapas_generados_ddpm2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sebsamson/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jpequegn/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jpequegn/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "akanametov/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Lingzhi/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "akanametov/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "atichets/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bansky/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bansky/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Kristobal/tmp-sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Hawk91/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nsanghi/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "matteopilotto/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "azimjon/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "daspartho/bored-ape-diffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nkasmanoff/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "matteopilotto/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "RedPandaAINLP/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "RedPandaAINLP/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "matteopilotto/sd-class-butterflies-32-v2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nkasmanoff/sd-eurosat": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jeblance/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "omikad/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jeblance/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "atsanda/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ton4eg/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jhoniromao/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "iqmand/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jcgarciaca/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jcgarciaca/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "misbahsy/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rambosorn/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "diffX/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hatbassist/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkiskoudounas/sd-universe-256px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hatbassist/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkiskoudounas/sd-aurora-256px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkiskoudounas/sd-pokemon-256px": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ClawCardMirror/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "LKyluk/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ClawCardMirror/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "GV05/sd-class-anime-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rrustom/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nudro/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "weirtz/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anthonyduer/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "chrisw225/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Takuhin/ddpm-snakes-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sh-lee/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "johnowhitaker/sd-class-wikiart-from-bedrooms": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fluorine/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fezhou/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "JoelMendez/hf-diffusion-models-class-1-butterflies-JoelMendez": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "guiemb/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "damiah/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "enzokro/sd-class-butterflies-huber-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hjjeon/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "enzokro/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "EmileEsmaili/ddpm-sheetmusic-colabVM": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "c-g/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zyoscovits/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Pal10/Palash_gen_butterflies": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "teddya2007/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ursus/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aymenkhs/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aymenkhs/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "katwicks/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "haakee/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Hawk91/sd-Pokemon": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "EmileEsmaili/ddpm-sheetmusic-huberloss-colabVM": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "txy8496/Diffusion_Model": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lily-phoo-95/sd-class-butterflies-35": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sdominguezc/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "misza222/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nbonaker/ddpm-celeb-face": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lewtun/ddpm-celebahq-finetuned-butterflies": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "EmileEsmaili/ddpm-sheetmusic-clean-l2loss-colabVM": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jimmysue/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nbonaker/ddpm-celeb-face-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "EmileEsmaili/ddpm-sheetmusic-clean-l1loss-colabVM": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "cyk1337/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "seongwan/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lseong721/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "uzn/ddpm-trucks": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "atorre/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alaaawad/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alaaawad/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "wildebeest3e/pokemon": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lewtun/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ankile/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkdb-fld-256-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jinghua2tang/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ankile/ddpm-pcam-96": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jinghua2tang/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ankile/ddpm-pcam-96-first-100": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "azimuth3d/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "azimuth3d/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "reachrkr/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "reachrkr/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Apocalypse-19/sd-butterflies-ceyda-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Apocalypse-19/ceyda-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Jackie/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "teticio/latent-audio-diffusion-512": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Jackie/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nghenzi/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ankile/ddpm-pcam-96-flip": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkdb-exu-256-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "i8pxgd2s/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "i8pxgd2s/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "neatbullshit/sd-class-butterflies-32_neatbullshit": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ksaml/mnist-fashion_64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Lorea/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "saveale/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rlpo/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nrsmac/ddpm-celebahq-finetuned-flowers-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tablesalt/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alaaawad/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "HikaruBear/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "vinowan/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "vadimMidav/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "vadimMidav/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aztecman/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lakssrini/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "quocBit/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "quocBit/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lakssrini/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Blackroot/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ldbruni/ronjafman-nov28": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Jaehoonzx63/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lakssrini/sd-class-living-room-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rvd92/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "csmendoza/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "BartMartin/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel"
+        }
+    ],
+    "jpequegn/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nudro/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "HuggingFace7/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "adrian78/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Totsukawaii/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "juancopi81/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "atorre/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geevegeorge/ddpm-hkdb-nor-256-200ep": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "GV05/sd-anime-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "batrlatom/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ericntay/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mertcobanov/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhow/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhow/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "midhunem/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dmarcos/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "stp4007/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sheldon-spock/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mindbytes/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "matantsev/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "acidhills/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dogeplusplus/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "cm230/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dfm794/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "brashandplucky/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aihobby/aihobby-sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aihobby/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nageshmashette/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "peterjin0703/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Apocalypse-19/ddpm-celebahq-fintuned-vintage-faces": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AndreaA/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SamFreitas/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anton-l/ddpm-ema-flowers-64-testt": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Glen/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ltorrick/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rmartinshort/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-butterflies-256_new_data": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Annuta/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-butterflies-256_new_data_500": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "akanametov/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AgentXXX/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "CCMat/ddpm-bored-apes-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Linbo/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AgentXXX/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yizhangliu/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yizhangliu/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hangjoni/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Guid/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "avojarot/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sophiaaez/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Verne/test-sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yizhangliu/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Thiibthib/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hawkeoni/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "patrickfleith/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "daspartho/bored-ape-diffusion-ddim": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "patrickfleith/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "JeanneRbs/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "wildebeest3e/stock-diffusers-image": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "CCMat/ddpm-bored-apes-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mijwiz-laboratories/al_nay_diffusion_unconditional_256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Arch4ngel/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "davidaponte/ddpm-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "siyue/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gggggxy/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "k-sobolev/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rafharutyunyan/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "CCMat/ddpm-church-finetune-wikiart-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rafharutyunyan/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Arch4ngel/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhow/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rafaelg/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rafaelg/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "RedPandaAINLP/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yuzhang/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KatrinaGal/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rafharutyunyan/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Thangaraj/sd-class-burger-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "frieza/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "MaksPavlov/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "salehi/salehi_unit1": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Kire/kirg-sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "davidkocharian/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Kire/kirg-sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nsanghi/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kzipa/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rr1729/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fjans/dnb-diffusion-256-ddim": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pravsels/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pravsels/ddpm-ffhq-vintage-finetuned-vintage-3epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "itryouthuggingface/aihobby-sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "MrDivakaruni/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mijwiz-laboratories/oud_diffusion_unconditional_256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "royam0820/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "royam0820/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fabiochiu/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shengy90/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shengy90/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rafaelg/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "colab71/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anibahug/stable_diff": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lakssrini/ddpm-celebahq-finetuned-vintageface": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shengy90/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hangjoni/sd-class-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xtlu/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ewanowara/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ewanowara/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xtlu/ddpm-butterflies-m1": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xtlu/ddpm-butterflies-m2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "c72599/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkzar90/sd-class-ukiyo-e-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "geocine/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "c72599/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "cm2300/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "wildebeest3e/stocks_daily_unet": [
+        {
+            "klass_name": "UNet2DModel"
+        }
+    ],
+    "cm2300/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Fazeelath/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gstaff/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anthonyduer/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gstaff/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "renee127/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "renee127/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "johanneskuk/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "royam0820/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Kire/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Thabet/stable_diffusion-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "rexoscare/sd-butterflies": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Thabet/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "abdalrahmanshahrour/imagegenshah-v5": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "gstaff/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "edsion/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anergy7/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "inkittmahdi/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "IzumiSatoshi/sketch2img-FashionMNIST": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Welaury/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bobber/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bobber/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "reachrkr/ddpm-celebahq-finetuned-butterflies-2epochs-1": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bobber/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "thashiguchi/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "usu96/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xtlu/ddpm-butterflies-m1new": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "konishino/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "konishino/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Kon3000/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Thabet/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "parayiv/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "akshay7/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nonsm/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mosfett/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mosfett/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hirotaka/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hirotaka/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "darthrevenge/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "darthrevenge/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alkzar90/sd-class-ukiyo-e-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "toinsson/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Thabet/ddpm-celebahq-finetuned-animals-1epoch": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "toinsson/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "LuisQ/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ihanif/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Antiraedus/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "cc97/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shahukareem/ddpm-celebahq-finetuned-cats-5epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "vkoriukina/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "arjoca/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "uumlaut/ddpm-vangogh-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shahp7575/oxford_flowers_sample_diffused": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shahp7575/oxford_flowers_diffused": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Umal-exvc/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kalloszsolty/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "iamanshul/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tenzon/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "anton-l/ddpm-ema-flowers-64-2gpu": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tenzon/ddpm-butterflies-128-v2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Ashish08/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hucuioo/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hucuioo/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "adakoda/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tenzon/ddpm-flowers-102": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "adakoda/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Umal-exvc/test-chocolate": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yuch0001/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mertcobanov/nature-small-diffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "uumlaut/ddpm-vangogh-faces": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "uumlaut/ddpm-vangogh": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "User315626/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "joewoodworth/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "szamanian/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "OnewayLab/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Kristofer/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "User315626/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Kristofer/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pdhrn/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jaybeeja/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yuch0001/ddpm-pokemon": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zrkcdd/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yuch0001/ddpm-butterflies-128-2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "szamanian/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yuch0001/pokemon": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Tanvi2992/ddpm-butterflies-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tarapunchik/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tarapunchik/sd-class-butterflies-63": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Utkarsh-Verma/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SherrySun/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "arjoca/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tarapunchik/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "juanfdangelo/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Volodymyr/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ezaromb/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ezaromb/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "marwanHug/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SKJeong/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Welaury/ddpm-celebahq-finetuned-butterflies-10epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "slushily/ohana-hannah-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Srivathsava/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pavle-tsotskolauri/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pavle-tsotskolauri/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "yuch0001/pokemon2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nabdan/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "HarrySun/hemepath": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "HOOC-COOH/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fzzhang/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "HOOC-COOH/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Srivathsava/ddpm-celb-faces": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "FZKUJI/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "cwoodley/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Nion/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fulviodan/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "chenchaozhao/ddpm-food101-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "MishaDebik/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "logannyeMD/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "logannyeMD/ddpm-osteosarcoma-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "esoinila/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Volodymyr/diffusion-on-pokemon-subset": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mtwright/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AkikoOu/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AkikoOu/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pitkok/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pcuenq/ddpm-faces-100": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pavle-tsotskolauri/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "JanuaryDesk/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ngeg2015/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "amitsolanki/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-128-noac": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-96-noac": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-160-noac": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-192-noac": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-256-noac": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-384-noac": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "OAOA/DifFace": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhenyabeznisko/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nabdan/mnist": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "EvSz/PokemonDiffuser-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "nabdan/mnist_20_epoch": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "basilevh/ddpm-ema-flowers-512-noac": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "PhanAnh/sd-arcane": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "slavadubrov/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "chudotony/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "WiNE-iNEFF/Minecraft-Skin-Diffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "PhanAnh/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dobis-lks/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dobis-lks/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AlphaSue/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Summer1111111/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dobis-lks/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aliciapj/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Summer1111111/sd-class-butterflies-33": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "717169kiran/ddpm-celb-faces": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "christw16/ddpm-pcam-96-flip": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "vgg/sd-skin-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AnasHXH/stable-diffusion-v1-4": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AnasHXH/stable-diffusion-x4-upscaler": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ATSiem/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "karou/ddpm-masks-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "cqzhongjiang/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "traiantitilincu/t-art-scratch-v1.0": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "joweyel/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "garg-aayush/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "garg-aayush/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "wtcherr/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "karou/ddpm-masks2-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "swagh1611/sd-class-butterflies-32-intro": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "johnowhitaker/chiptunes_test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "johnowhitaker/Electronic_test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "NinaK/ddpm-celebahq-finetuned-faces-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AliBuildsAI/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "AliBuildsAI/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tadisettiraju/raju_diffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "karou/ddpm-masksCat-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "erniechiew/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "A3itor/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "akanametov/audio-diffusion-electronic": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "vadimMidav/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "toukapy/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "caslabs/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lvhoang/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "metamath/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "metamath/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "TieIncred/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Pie31415/dm_anime": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "StatsGary/audio-diffusion-electro-rock": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "StatsGary/audio-diffusion-hiphop-classical": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "StatsGary/audio-diffusion-folk-hop": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "OlegBatrakov/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "OlegBatrakov/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KushalRamaiya/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "juancopi81/test-audio-diffusion-electronic": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "dzrex/sd-class-butterflies-32-dzrex": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "timtaotao/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "erniechiew/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bencevans/ddpm-ena24-gen-512-100": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "liyafu/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "t3dw/sd-class-butts-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zaristei/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "t3dw/sd-class-butts-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "namangarg110/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "srini98/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "t3dw/sd-class-butts-64b": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kobonyo/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jayxu/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jayxu/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhiyuan-research/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "thucdangvan020999/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "thucdangvan020999/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Reza6666/ddpm-butterflies-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "alex-uv2/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Hatman/ddpm-celebahq-finetuned-few-shot-universe": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xflxidian/ddpm-ema-pokemon": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SandyML/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hello2mao/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "valhalla/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lukemelas/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lukemelas/cifar10-try0": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hulkster/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SandyML/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "DeppOnHuggingFace/sd-arsstickers-128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ynwag9/fashion_mnist_ddpm_32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "fokina/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/Unconditional_Butterflies_x64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "TieIncred/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "DJJ42/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jingchan/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KoreadeepKai/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KoreadeepKai/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "snow-leopard/test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "snow-leopard/init_baseline_test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "drawingContext/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "garg-aayush/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "RavGau/ddpm-clear-sat-256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "timtaotao/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "mudassirkhan19/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "workwithjahan/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "hui168/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Mykolyt/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "SayhoKim/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KoreadeepKai/ddpm-celebahq-finetuned-butterflies-10epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Akuxcw/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/Unconditional_Butterflies_diffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bustardchad/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Akuxcw/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "karmall0xc/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jonathanfernandes/ddpm-celebahq-finetuned-anime-5": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jonathanfernandes/ddpm-celebahq-finetuned-anime-25": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jonathanfernandes/ddpm-celebahq-finetuned-anime-100": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jonathanfernandes/ddpm-celebahq-finetuned-anime-50": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "jjanarek/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "emilienchauvet/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "emilienchauvet/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KarosY/RL_1000_256_1": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KarosY/ddpm_plan_1000_256": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/trial_accelerate": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "email4u/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "pranked03/ddpm-pokemon": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "afa1/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aloofluo/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/Butterflies_diffusion": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "wangjun/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Mirasara/lm1-class-wood-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Mirasara/lm2-class-wood-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "enchantinggg4/flowers-test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "enchantinggg4/anime-ddpm-2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "NvkAnirudh/sd-butterflies32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "NielsPeng/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "adil-o/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "lansinuote/diffusion.1.unconditional": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "adil-o/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-256_500_epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "adil-o/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-256_50_epochs_1000_steps_continue": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "KarosY/lianjia_ddpm": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_50_epochs_1000_steps": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "aframires/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_50_epochs_1000_steps_continue": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_300_epochs_1000_steps_continue_cont_": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_300_epochs_1000_steps_real_cont": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_300_epochs_1000_steps_real_cont_cont": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yaoyu/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yaoyu/sd-class-butterflies-64-accelerate": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_300_epochs_1000_steps_real_cont_cont_cont": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_300_epochs_1000_steps_final": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Marcoalves20/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "juancopi81/audio-diffusion-hip-hop-test": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "tvergho/audio-diffusion-512": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "BeanBry/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_300_epochs_1000_steps_final_Cont": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_300_epochs_1000_steps_final_Cont_cont": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_500_epochs_1000_steps_final________": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/Breast_unconditional_64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "sidharth10/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Celesto/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_200_epochs_1000_float32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "luciolrv/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_300_epochs_1000_float32_cont": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/Breast_unconditional_64_100": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-64_1000_epochs_1000_fp16": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-64_500_epochs_1000_float32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xvjiarui/ldm-vq-f8": [
+        {
+            "klass_name": "VQModel"
+        }
+    ],
+    "xvjiarui/ldm-vq-f8-n256": [
+        {
+            "klass_name": "VQModel"
+        }
+    ],
+    "xvjiarui/ldm-vq-f16": [
+        {
+            "klass_name": "VQModel"
+        }
+    ],
+    "Alleria/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xvjiarui/taming-vq-f16-n1024": [
+        {
+            "klass_name": "VQModel"
+        }
+    ],
+    "xvjiarui/taming-vq-f16-n16384": [
+        {
+            "klass_name": "VQModel"
+        }
+    ],
+    "Alleria/ddpm-ema-pokemon-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "theleokul/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "theleokul/sd-class-butterflies-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-64_1000_epochs_1000_fp16_cont": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "ravitejac/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xiaosean/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_1000_plus_epochs_fp16_final": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhixiaoni/ddpm-selected-formula-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "shika-san/few-shot-skulls": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "d2niraj555/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/Latent_Breast_unconditional_noboost": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Jimbro/pokemon_fusion_outputs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhixiaoni/ddpm-selected-formula-32x128": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/latent_32_ga-4": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Likalto4/latent_32_ga-8": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "xydd/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Vermillion-Qi/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bamine/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "firqaaa/ddpm-celebahq-finetuned-vintageface-50epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "prompt-eng-lab/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "bamine/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Yagorka/ddpm-pokemons-128_1000_continue_train": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zelinzang/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "techykajal/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "techykajal/ddpm-celebahq-finetuned-butterflies-2epochs": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "maxwell1/ddpm-ema-flowers-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "diffusers/ddpm-dummy": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Jimbro/pokemon_fusion_outputs_2": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "baran-cengiz/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhixiaoni/ddpm-CROHME_Train_2014_png-64x64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "darren-01/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "diffusers/ddpm-cifar10-32-demo": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "Esche/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "zhixiaoni/ddpm-CROHME_Train_2014_png-64": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ],
+    "kehong/sd-class-butterflies-32": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
+        }
+    ]
+}
