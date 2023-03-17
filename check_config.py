@@ -99,24 +99,26 @@ def main(args):
 
             raise e
 
-        if "pytorch_lora_weights.bin" in repo_files:
+        is_full_pipeline_repository, nested_path = check_is_full_pipeline_repository(
+            repo_files
+        )
+        is_root_level_model_repository = "config.json" in repo_files
+        is_lora_repository = "pytorch_lora_weights.bin" in repo_files
+        is_custom_pipeline_repository = "pipeline.py" in repo_files
+
+        if is_lora_repository:
             print(f"lora repository {hub_upload_id}")
             continue
 
         if (
-            "model_index.json" not in repo_files
-            and "model_files/model_index.json" not in repo_files
-            and "config.json" not in repo_files
-            and "pipeline.py" in repo_files
+            not is_full_pipeline_repository
+            and not is_root_level_model_repository
+            and is_custom_pipeline_repository
         ):
             print(f"custom pipeline repository: {hub_upload_id}")
             continue
 
-        if (
-            "model_index.json" not in repo_files
-            and "model_files/model_index.json" not in repo_files
-            and "config.json" not in repo_files
-        ):
+        if not is_full_pipeline_repository and not is_root_level_model_repository:
             print(
                 f"No root level `model_index.json` or `config.json` found: {hub_upload_id}"
             )
@@ -127,26 +129,23 @@ def main(args):
             hub_upload_id, allow_patterns="*.json", token=True
         )
 
-        if "model_index.json" in repo_files:
-            model_index_path = os.path.join(snapshot_path, "model_index.json")
-
-            models_with_deprecated_attention_blocks = load_from_model_index(
-                snapshot_path=snapshot_path, model_index_path=model_index_path
-            )
-        elif "model_files/model_index.json" in repo_files:
-            nested_model_index_path = os.path.join(
-                snapshot_path, "model_files", "model_index.json"
-            )
+        if is_full_pipeline_repository:
+            if nested_path is None:
+                model_index_path = os.path.join(snapshot_path, "model_index.json")
+            else:
+                model_index_path = os.path.join(
+                    snapshot_path, nested_path, "model_index.json"
+                )
 
             models_with_deprecated_attention_blocks = load_from_model_index(
                 snapshot_path=snapshot_path,
-                model_index_path=nested_model_index_path,
-                nested_path="model_files",
+                model_index_path=model_index_path,
+                nested_path=nested_path,
             )
-        elif "config.json" in repo_files:
+        elif is_root_level_model_repository:
             model_path = os.path.join(snapshot_path, "config.json")
 
-            load_from_root_level_model(
+            models_with_deprecated_attention_blocks = load_from_root_level_model(
                 snapshot_path=snapshot_path, model_path=model_path
             )
         else:
@@ -225,6 +224,21 @@ def hub_uploads_from_file(*args, filename, skip_hub_ids):
                 hub_upload_ids.append(hub_upload_id)
 
     return hub_upload_ids
+
+
+def check_is_full_pipeline_repository(repo_files):
+    is_full_pipeline_repository = False
+    nested_path = None
+
+    for repo_file in repo_files:
+        path, filename = os.path.split(repo_file)
+
+        if filename == "model_index.json":
+            if path != "":
+                nested_path = path
+            is_full_pipeline_repository = True
+
+    return is_full_pipeline_repository, nested_path
 
 
 def load_from_model_index(*args, snapshot_path, model_index_path, nested_path=None):
