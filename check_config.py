@@ -120,7 +120,7 @@ def main(args):
 
         if not is_full_pipeline_repository and not is_root_level_model_repository:
             print(
-                f"No root level `model_index.json` or `config.json` found: {hub_upload_id}"
+                f"malformed repo: {hub_upload_id}"
             )
             malformed_repos.append(hub_upload_id)
             continue
