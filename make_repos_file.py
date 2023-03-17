@@ -18,15 +18,20 @@ def main(args):
 
     diffusers_models = api.list_models(filter="diffusers")
 
-    model_ids = []
+    output = []
 
     for diffusers_model in diffusers_models:
         model_id = diffusers_model.modelId
 
-        model_ids.append(model_id)
+        if "lora" in diffusers_model.tags or "Lora" in diffusers_model.tags:
+            tagged_as_lora = True
+        else:
+            tagged_as_lora = False
+
+        output.append({"hub_upload_id": model_id, "tagged_as_lora": tagged_as_lora})
 
     with open(args.hub_uploads_file, "w") as f:
-        json.dump(model_ids, f, indent=4)
+        json.dump(output, f, indent=4)
 
 
 if __name__ == "__main__":

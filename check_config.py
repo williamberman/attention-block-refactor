@@ -76,27 +76,25 @@ def main(args):
     skip_hub_ids = set(skip_hub_ids)
 
     if args.check_repo is not None:
-        hub_upload_ids = [args.check_repo]
-        tagged_lora_upload_ids = []
+        hub_uploads = [{"hub_upload_id": args.check_repo, "tagged_as_lora": False}]
     elif args.hub_uploads_load_from_file is None:
-        hub_upload_ids, tagged_lora_upload_ids = diffusers_hub_uploads(
-            api=api, skip_hub_ids=skip_hub_ids
-        )
+        hub_uploads = diffusers_hub_uploads(api=api, skip_hub_ids=skip_hub_ids)
     else:
-        hub_upload_ids = hub_uploads_from_file(
+        hub_uploads = hub_uploads_from_file(
             filename=args.hub_uploads_load_from_file, skip_hub_ids=skip_hub_ids
         )
-        tagged_lora_upload_ids = []
 
-    tagged_lora_upload_ids = set(tagged_lora_upload_ids)
-
-    print(f"number diffusers hub uploads: {len(hub_upload_ids)}")
+    print(f"number diffusers hub uploads: {len(hub_uploads)}")
 
     hub_uploads_with_deprecated_attention_blocks = {}
     requires_license = []
     malformed_repos = []
 
-    for hub_upload_id in hub_upload_ids:
+    for hub_upload in hub_upload:
+        hub_upload_id = hub_upload["hub_upload_id"]
+
+        is_tagged_lora_repository = hub_upload["tagged_as_lora"]
+
         print(f"checking hub upload: {hub_upload_id}")
 
         try:
@@ -118,8 +116,6 @@ def main(args):
         is_root_level_scheduler_repository = "scheduler_config.json" in repo_files
 
         is_lora_repository = "pytorch_lora_weights.bin" in repo_files
-
-        is_tagged_lora_repository = hub_upload_id in tagged_lora_upload_ids
 
         is_custom_pipeline_repository = "pipeline.py" in repo_files
 
@@ -235,8 +231,7 @@ def diffusers_hub_uploads(*args, api, skip_hub_ids):
     # pull all diffusers compatible models from hub
     diffusers_models = api.list_models(filter="diffusers")
 
-    hub_upload_ids = []
-    tagged_lora_upload_ids = []
+    hub_uploads = []
 
     for diffusers_model in diffusers_models:
         hub_id = diffusers_model.modelId
@@ -245,27 +240,32 @@ def diffusers_hub_uploads(*args, api, skip_hub_ids):
             print(f"skipping {hub_id}")
             continue
 
-        hub_upload_ids.append(hub_id)
-
         if "lora" in diffusers_model.tags or "Lora" in diffusers_model.tags:
-            tagged_lora_upload_ids.append(hub_id)
+            tagged_as_lora = True
+        else:
+            tagged_as_lora = False
 
-    return hub_upload_ids, tagged_lora_upload_ids
+        hub_uploads.append({"hub_upload_id": hub_id, "tagged_as_lora": tagged_as_lora})
+
+    return hub_uploads
 
 
 def hub_uploads_from_file(*args, filename, skip_hub_ids):
-    hub_upload_ids = []
+    hub_uploads = []
 
     with open(filename) as f:
-        hub_upload_ids_ = json.load(f)
+        hub_uploads_ = json.load(f)
 
-        for hub_upload_id in hub_upload_ids_:
+        for hub_upload in hub_uploads_:
+            hub_upload_id = hub_upload["hub_upload_id"]
+
             if hub_upload_id in skip_hub_ids:
                 print(f"skipping {hub_upload_id}")
-            else:
-                hub_upload_ids.append(hub_upload_id)
+                continue
 
-    return hub_upload_ids
+            hub_uploads.append(hub_upload)
+
+    return hub_uploads
 
 
 def check_is_full_pipeline_repository(repo_files):
