@@ -107,11 +107,26 @@ def main(args):
         is_full_pipeline_repository, nested_path = check_is_full_pipeline_repository(
             repo_files
         )
+
         is_root_level_model_repository = "config.json" in repo_files
+
         is_root_level_scheduler_repository = "scheduler_config.json" in repo_files
+
         is_lora_repository = "pytorch_lora_weights.bin" in repo_files
+
         is_tagged_lora_repository = hub_upload_id in tagged_lora_upload_ids
+
         is_custom_pipeline_repository = "pipeline.py" in repo_files
+
+        is_empty_repository = (
+            len(repo_files) == 2
+            and ".gitattributes" in repo_files
+            and "README.md" in repo_files
+        )
+
+        if is_empty_repository:
+            print(f"empty repository {hub_upload_id}")
+            continue
 
         if is_lora_repository:
             print(f"lora repository {hub_upload_id}")
