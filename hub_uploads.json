@@ -16108,10 +16108,6 @@
         "tagged_as_lora": false
     },
     {
-        "hub_upload_id": "AlexZheng/chilloutmix-ni",
-        "tagged_as_lora": false
-    },
-    {
         "hub_upload_id": "Lucetepolis/MareColoris",
         "tagged_as_lora": false
     },
@@ -17586,6 +17582,10 @@
     {
         "hub_upload_id": "gapa9999/gapacharone",
         "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "lora-library/abc123",
+        "tagged_as_lora": true
     },
     {
         "hub_upload_id": "brushpenbob/evang_pencilwork",
