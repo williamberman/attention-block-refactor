@@ -1,6 +1,4 @@
 [
-    "waifu-research-department/long-prompt-weighting-pipeline",
-    "waifu-research-department/onnx-long-prompt-weighting-pipeline",
     "Colala/pokegen",
     "BigCrazyCat/bk-v1",
     "svjack/Stable-Diffusion-Pokemon-zh",

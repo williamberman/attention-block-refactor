@@ -107,6 +107,15 @@ def main(args):
             "model_index.json" not in repo_files
             and "model_files/model_index.json" not in repo_files
             and "config.json" not in repo_files
+            and "pipeline.py" in repo_files
+        ):
+            print(f"custom pipeline repository: {hub_upload_id}")
+            continue
+
+        if (
+            "model_index.json" not in repo_files
+            and "model_files/model_index.json" not in repo_files
+            and "config.json" not in repo_files
         ):
             print(
                 f"No root level `model_index.json` or `config.json` found: {hub_upload_id}"
