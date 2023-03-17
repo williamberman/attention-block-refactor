@@ -74,11 +74,16 @@ def main(args):
     skip_hub_ids = set(skip_hub_ids)
 
     if args.hub_uploads_load_from_file is None:
-        hub_upload_ids = diffusers_hub_uploads(api=api, skip_hub_ids=skip_hub_ids)
+        hub_upload_ids, tagged_lora_upload_ids = diffusers_hub_uploads(
+            api=api, skip_hub_ids=skip_hub_ids
+        )
     else:
         hub_upload_ids = hub_uploads_from_file(
             filename=args.hub_uploads_load_from_file, skip_hub_ids=skip_hub_ids
         )
+        tagged_lora_upload_ids = []
+
+    tagged_lora_upload_ids = set(tagged_lora_upload_ids)
 
     print(f"number diffusers hub uploads: {len(hub_upload_ids)}")
 
@@ -103,7 +108,9 @@ def main(args):
             repo_files
         )
         is_root_level_model_repository = "config.json" in repo_files
+        is_root_level_scheduler_repository = "scheduler_config.json" in repo_files
         is_lora_repository = "pytorch_lora_weights.bin" in repo_files
+        is_tagged_lora_repository = hub_upload_id in tagged_lora_upload_ids
         is_custom_pipeline_repository = "pipeline.py" in repo_files
 
         if is_lora_repository:
@@ -118,10 +125,24 @@ def main(args):
             print(f"custom pipeline repository: {hub_upload_id}")
             continue
 
+        if (
+            not is_full_pipeline_repository
+            and not is_root_level_model_repository
+            and is_root_level_scheduler_repository
+        ):
+            print(f"custom root level scheduler repository: {hub_upload_id}")
+            continue
+
+        if (
+            not is_full_pipeline_repository
+            and not is_root_level_model_repository
+            and is_tagged_lora_repository
+        ):
+            print(f"tagged lora repository: {hub_upload_id}")
+            continue
+
         if not is_full_pipeline_repository and not is_root_level_model_repository:
-            print(
-                f"malformed repo: {hub_upload_id}"
-            )
+            print(f"malformed repo: {hub_upload_id}")
             malformed_repos.append(hub_upload_id)
             continue
 
@@ -199,16 +220,21 @@ def diffusers_hub_uploads(*args, api, skip_hub_ids):
     diffusers_models = api.list_models(filter="diffusers")
 
     hub_upload_ids = []
+    tagged_lora_upload_ids = []
 
     for diffusers_model in diffusers_models:
         hub_id = diffusers_model.modelId
 
         if hub_id in skip_hub_ids:
             print(f"skipping {hub_id}")
-        else:
-            hub_upload_ids.append(hub_id)
+            continue
 
-    return hub_upload_ids
+        hub_upload_ids.append(hub_id)
+
+        if "lora" in diffusers_model.tags:
+            tagged_lora_upload_ids.append(hub_id)
+
+    return hub_upload_ids, tagged_lora_upload_ids
 
 
 def hub_uploads_from_file(*args, filename, skip_hub_ids):
