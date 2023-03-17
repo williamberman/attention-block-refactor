@@ -1,5 +1,5 @@
 import argparse
-from huggingface_hub import HfApi, snapshot_download
+from huggingface_hub import HfApi, snapshot_download, list_repo_files
 from huggingface_hub.utils import HfHubHTTPError
 import json
 import os
@@ -66,15 +66,12 @@ def parse_args():
 def main(args):
     api = HfApi()
 
-    skip_hub_ids = set()
-
+    skip_hub_ids = []
     if args.skip_file is not None:
         with open(args.skip_file) as f:
-            for line in f.readlines():
-                line = line.strip()
+            skip_hub_ids = json.load(f)
 
-                if len(line) != 0:
-                    skip_hub_ids.add(line)
+    skip_hub_ids = set(skip_hub_ids)
 
     if args.hub_uploads_load_from_file is None:
         hub_upload_ids = diffusers_hub_uploads(api=api, skip_hub_ids=skip_hub_ids)
@@ -93,9 +90,7 @@ def main(args):
         print(f"checking hub upload: {hub_upload_id}")
 
         try:
-            snapshot_path = snapshot_download(
-                hub_upload_id, allow_patterns="*.json", token=True
-            )
+            repo_files = list_repo_files(hub_upload_id, token=True)
         except HfHubHTTPError as e:
             if e.response.status_code == 403:
                 print(f"requires license: {hub_upload_id}")
@@ -104,13 +99,49 @@ def main(args):
 
             raise e
 
-        models_with_deprecated_attention_blocks = find_deprecated_attention(
-            snapshot_path
-        )
+        if "pytorch_lora_weights.bin" in repo_files:
+            print(f"lora repository {hub_upload_id}")
+            continue
 
-        if models_with_deprecated_attention_blocks is None:
+        if (
+            "model_index.json" not in repo_files
+            and "model_files/model_index.json" not in repo_files
+            and "config.json" not in repo_files
+        ):
+            print(
+                f"No root level `model_index.json` or `config.json` found: {hub_upload_id}"
+            )
             malformed_repos.append(hub_upload_id)
             continue
+
+        snapshot_path = snapshot_download(
+            hub_upload_id, allow_patterns="*.json", token=True
+        )
+
+        if "model_index.json" in repo_files:
+            model_index_path = os.path.join(snapshot_path, "model_index.json")
+
+            models_with_deprecated_attention_blocks = load_from_model_index(
+                snapshot_path=snapshot_path, model_index_path=model_index_path
+            )
+        elif "model_files/model_index.json" in repo_files:
+            nested_model_index_path = os.path.join(
+                snapshot_path, "model_files", "model_index.json"
+            )
+
+            models_with_deprecated_attention_blocks = load_from_model_index(
+                snapshot_path=snapshot_path,
+                model_index_path=nested_model_index_path,
+                nested_path="model_files",
+            )
+        elif "config.json" in repo_files:
+            model_path = os.path.join(snapshot_path, "config.json")
+
+            load_from_root_level_model(
+                snapshot_path=snapshot_path, model_path=model_path
+            )
+        else:
+            assert False
 
         if len(models_with_deprecated_attention_blocks) == 0:
             print(f"no deprecated attention blocks in {hub_upload_id}")
@@ -176,46 +207,15 @@ def hub_uploads_from_file(*args, filename, skip_hub_ids):
     hub_upload_ids = []
 
     with open(filename) as f:
-        for line in f.readlines():
-            line = line.strip()
+        hub_upload_ids_ = json.load(f)
 
-            if len(line) != 0:
-                if line in skip_hub_ids:
-                    print(f"skipping {line}")
-                else:
-                    hub_upload_ids.append(line)
+        for hub_upload_id in hub_upload_ids_:
+            if hub_upload_id in skip_hub_ids:
+                print(f"skipping {hub_upload_id}")
+            else:
+                hub_upload_ids.append(hub_upload_id)
 
     return hub_upload_ids
-
-
-def find_deprecated_attention(snapshot_path):
-    model_index_path = os.path.join(snapshot_path, "model_index.json")
-    nested_model_index_path = os.path.join(
-        snapshot_path, "model_files", "model_index.json"
-    )
-    model_path = os.path.join(snapshot_path, "config.json")
-
-    if os.path.isfile(model_index_path):
-        models_with_deprecated_attention_blocks = load_from_model_index(
-            snapshot_path=snapshot_path, model_index_path=model_index_path
-        )
-    elif os.path.isfile(nested_model_index_path):
-        models_with_deprecated_attention_blocks = load_from_model_index(
-            snapshot_path=snapshot_path,
-            model_index_path=nested_model_index_path,
-            nested_path="model_files",
-        )
-    elif os.path.isfile(model_path):
-        return load_from_root_level_model(
-            snapshot_path=snapshot_path, model_path=model_path
-        )
-    else:
-        print(
-            f"No root level `model_index.json` or `config.json` found: {snapshot_path}"
-        )
-        return None
-
-    return models_with_deprecated_attention_blocks
 
 
 def load_from_model_index(*args, snapshot_path, model_index_path, nested_path=None):
