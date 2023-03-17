@@ -2898,6 +2898,12 @@
             "model_key": "unet"
         }
     ],
+    "nubby/Yume-Grimgar": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "sd-dreambooth-library/danielveneco2": [
         {
             "klass_name": "AutoencoderKL",
@@ -3130,12 +3136,6 @@
         {
             "klass_name": "UNet2DModel",
             "model_key": "unet"
-        }
-    ],
-    "julianmoraes/test-model": [
-        {
-            "klass_name": "AutoencoderKL",
-            "model_key": "vae"
         }
     ],
     "pds/ddpm-butterflies-128": [
@@ -3461,12 +3461,6 @@
             "model_key": "vae"
         }
     ],
-    "ThrinathMphasis/mickey-mouse": [
-        {
-            "klass_name": "AutoencoderKL",
-            "model_key": "vae"
-        }
-    ],
     "xiaohui2022/dog2SD": [
         {
             "klass_name": "AutoencoderKL",
@@ -3748,6 +3742,12 @@
         }
     ],
     "osanseviero/compvis_fix": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "Guizmus/SD_PoW_Collection": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -4120,6 +4120,12 @@
         }
     ],
     "TheLastBen/hrrzg-style-768px": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "Guizmus/SD_DreamerCommunities_Collection": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -4840,12 +4846,6 @@
         }
     ],
     "Qilex/bom-art": [
-        {
-            "klass_name": "AutoencoderKL",
-            "model_key": "vae"
-        }
-    ],
-    "17939225/feature_extractor": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -6086,6 +6086,12 @@
             "model_key": "vae"
         }
     ],
+    "scriche/Slime": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "JulianBons/sd-class-butterflies-32": [
         {
             "klass_name": "UNet2DModel",
@@ -6281,7 +6287,7 @@
     "alibaba-pai/pai-diffusion-food-large-zh": [
         {
             "klass_name": "AutoencoderKL",
-            "model_key": "vqvae"
+            "model_key": "vae"
         }
     ],
     "EricJai/ddpm-butterflies-128": [
@@ -6860,6 +6866,12 @@
             "model_key": "vae"
         }
     ],
+    "Elvenson/diffuser_inference": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "sd-dreambooth-library/avocado-toy": [
         {
             "klass_name": "AutoencoderKL",
@@ -7170,6 +7182,12 @@
         {
             "klass_name": "UNet2DModel",
             "model_key": "unet"
+        }
+    ],
+    "jxuhf/Fine-Tuned-Stable-Diffusion-DreamBooth": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
         }
     ],
     "HusseinHE/h768": [
@@ -7688,6 +7706,12 @@
             "model_key": "vae"
         }
     ],
+    "Nina1725/stable-test1": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "c-g/sd-class-butterflies-32": [
         {
             "klass_name": "UNet2DModel",
@@ -8004,6 +8028,12 @@
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
+        }
+    ],
+    "KarosY/ddpm-houseplan-64-epoch500-1": [
+        {
+            "klass_name": "UNet2DModel",
+            "model_key": "unet"
         }
     ],
     "hr16/ira-olympus-4000": [
@@ -8346,6 +8376,12 @@
         {
             "klass_name": "UNet2DModel",
             "model_key": "unet"
+        }
+    ],
+    "VictorG97/v9701": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
         }
     ],
     "ankile/ddpm-butterflies-128": [
@@ -8910,6 +8946,12 @@
             "model_key": "vae"
         }
     ],
+    "saltacc/wd-1-4-anime": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "Nina1725/dreambooth-concept": [
         {
             "klass_name": "AutoencoderKL",
@@ -9174,6 +9216,12 @@
         }
     ],
     "DFrostKilla/teamcomo-kj": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "FrostyDeluxe/runpod-train-v1": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -10235,6 +10283,12 @@
         }
     ],
     "Dushwe/china-chic-landscape": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "nubby/kantoku": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -12523,6 +12577,12 @@
             "model_key": "vae"
         }
     ],
+    "tranmc/model-diffuser": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "mosfett/sd-class-butterflies-32": [
         {
             "klass_name": "UNet2DModel",
@@ -12698,6 +12758,12 @@
         }
     ],
     "sasa30/ssaassaaddoo": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "caseycollins/SD-icons": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -13373,6 +13439,12 @@
         {
             "klass_name": "UNet2DModel",
             "model_key": "unet"
+        }
+    ],
+    "patrickvonplaten/extract_ema_diff": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
         }
     ],
     "Xhaheen/srkay-man_6-1-2022": [
@@ -16164,12 +16236,6 @@
             "model_key": "vae"
         }
     ],
-    "Biscuitbeard/Portrait1": [
-        {
-            "klass_name": "AutoencoderKL",
-            "model_key": "vae"
-        }
-    ],
     "timbrooks/instruct-pix2pix": [
         {
             "klass_name": "AutoencoderKL",
@@ -18558,6 +18624,12 @@
             "model_key": "vae"
         }
     ],
+    "xLovelty/Chiakidangan": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "BotsOne/jeffstewart3": [
         {
             "klass_name": "AutoencoderKL",
@@ -19458,6 +19530,12 @@
             "model_key": "vae"
         }
     ],
+    "Dunkindont/Foto-Assisted-Diffusion-FAD_V0": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "Patrickrpds/mriverdb": [
         {
             "klass_name": "AutoencoderKL",
@@ -19501,6 +19579,12 @@
         }
     ],
     "Haruzo/heroes-iii-towns-model": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "hanzogak/Lsmith-model": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -19555,12 +19639,6 @@
         }
     ],
     "Fred99774/victroda": [
-        {
-            "klass_name": "AutoencoderKL",
-            "model_key": "vae"
-        }
-    ],
-    "HusseinHE/saad": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -19932,12 +20010,6 @@
             "model_key": "vae"
         }
     ],
-    "8glabs/trained_models_osbi": [
-        {
-            "klass_name": "AutoencoderKL",
-            "model_key": "vae"
-        }
-    ],
     "JAWCF/map-demo-500": [
         {
             "klass_name": "AutoencoderKL",
@@ -20280,6 +20352,12 @@
             "model_key": "vae"
         }
     ],
+    "smikhai1/sd21_db_pixar3d-test": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "karmall0xc/sd-class-butterflies-32": [
         {
             "klass_name": "UNet2DModel",
@@ -20547,7 +20625,19 @@
             "model_key": "vae"
         }
     ],
+    "yuvalkirstain/stable-diffusion-2-1-ait": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "AIARTCHAN/AbyssHellHero": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "yuvalkirstain/dreamlike-photoreal-2.0-ait": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -20878,6 +20968,12 @@
         }
     ],
     "8glabs/Deliberate_mfer_a100": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "skillandpro/kekakek": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -22678,6 +22774,12 @@
             "model_key": "unet"
         }
     ],
+    "asmaekhald/chebakia-diffusion": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "selcukkubur/cocomelon": [
         {
             "klass_name": "AutoencoderKL",
@@ -22817,6 +22919,12 @@
         }
     ],
     "Falah/wasma-agha": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "Linaqruf/namazu": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"
@@ -23200,6 +23308,12 @@
             "model_key": "unet"
         }
     ],
+    "MarkK/VanyaKeshevSD1.5": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "zelinzang/ddpm-ema-flowers-64": [
         {
             "klass_name": "UNet2DModel",
@@ -23518,6 +23632,12 @@
             "model_key": "vae"
         }
     ],
+    "AstraliteHeart/pony-diffusion-v4": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
     "NickKolok/arki-20230315-2300-analog-3000-steps": [
         {
             "klass_name": "AutoencoderKL",
@@ -23645,6 +23765,30 @@
         }
     ],
     "osanpo/fork_loliDiffusion": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "mertcobanov/uv-flower": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "alibaba-pai/pai-diffusion-general-xlarge-zh": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "Astroboy01/Medxffusion": [
+        {
+            "klass_name": "AutoencoderKL",
+            "model_key": "vae"
+        }
+    ],
+    "gapa9999/gapacharone": [
         {
             "klass_name": "AutoencoderKL",
             "model_key": "vae"

@@ -90,7 +90,7 @@ def main(args):
     requires_license = []
     malformed_repos = []
 
-    for hub_upload in hub_upload:
+    for hub_upload in hub_uploads:
         hub_upload_id = hub_upload["hub_upload_id"]
 
         is_tagged_lora_repository = hub_upload["tagged_as_lora"]
