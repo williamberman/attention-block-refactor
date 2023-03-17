@@ -13012,10 +13012,6 @@
         "tagged_as_lora": false
     },
     {
-        "hub_upload_id": "Aotsuyu/Qcha",
-        "tagged_as_lora": false
-    },
-    {
         "hub_upload_id": "HusseinHE/zsks",
         "tagged_as_lora": false
     },
@@ -15316,6 +15312,10 @@
         "tagged_as_lora": false
     },
     {
+        "hub_upload_id": "effdeeargh/facebase",
+        "tagged_as_lora": false
+    },
+    {
         "hub_upload_id": "JamesFlare/pastel-mix",
         "tagged_as_lora": false
     },
@@ -16105,6 +16105,10 @@
     },
     {
         "hub_upload_id": "mdmachine/1.5-diffusion_pytorch_model",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "AlexZheng/chilloutmix-ni",
         "tagged_as_lora": false
     },
     {
@@ -17520,10 +17524,6 @@
         "tagged_as_lora": false
     },
     {
-        "hub_upload_id": "ttttdiva/loliDiffusion",
-        "tagged_as_lora": false
-    },
-    {
         "hub_upload_id": "NickKolok/arki-20230316-14-analog-7200-steps",
         "tagged_as_lora": false
     },
@@ -17556,6 +17556,10 @@
         "tagged_as_lora": false
     },
     {
+        "hub_upload_id": "kine99/kine99",
+        "tagged_as_lora": false
+    },
+    {
         "hub_upload_id": "frankjoshua/realistic-vision-v13",
         "tagged_as_lora": false
     },
@@ -17581,6 +17585,38 @@
     },
     {
         "hub_upload_id": "gapa9999/gapacharone",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "brushpenbob/evang_pencilwork",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "frosting-tv/frosting-abyss",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "natsusakiyomi/HimawariMix-V2",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "SOV3/avatar-fantasy-high-poly",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "NickKolok/arki-20230317-15-analog-6600-steps",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "simonfalke/anythingv4.5",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "armanakbari/sd-class-cifar10-32",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "jimizzni/ddpm-butterflies-128",
         "tagged_as_lora": false
     }
 ]

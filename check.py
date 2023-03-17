@@ -335,16 +335,20 @@ def load_from_model_index(*args, snapshot_path, model_index_path, nested_path=No
 
         klass_name = value[1]
 
-        is_model_deprecated_ = is_model_deprecated(
+        deprecated_blocks_ = deprecated_blocks(
             klass_name=klass_name,
             snapshot_path=snapshot_path,
             model_key=model_key,
             nested_path=nested_path,
         )
 
-        if is_model_deprecated_:
+        if len(deprecated_blocks_) > 0:
             models_with_deprecated_attention_blocks.append(
-                {"klass_name": klass_name, "model_key": model_key}
+                {
+                    "klass_name": klass_name,
+                    "model_key": model_key,
+                    "deprecated_blocks": deprecated_blocks_,
+                }
             )
 
     return models_with_deprecated_attention_blocks
@@ -362,21 +366,23 @@ def load_from_root_level_model(*args, snapshot_path, model_path):
 
     klass_name = model.get("_class_name", None)
 
-    is_model_deprecated_ = is_model_deprecated(
+    deprecated_blocks_ = deprecated_blocks(
         klass_name=klass_name, snapshot_path=snapshot_path
     )
 
-    if is_model_deprecated_:
-        models_with_deprecated_attention_blocks.append({"klass_name": klass_name})
+    if len(deprecated_blocks_) > 0:
+        models_with_deprecated_attention_blocks.append(
+            {"klass_name": klass_name, "deprecated_blocks": deprecated_blocks_}
+        )
 
     return models_with_deprecated_attention_blocks
 
 
-def is_model_deprecated(
+def deprecated_blocks(
     *args, snapshot_path, model_key=None, nested_path=None, klass_name=None
 ):
     if klass_name is not None and klass_name not in ATTENTION_BLOCK_CLASSES:
-        return False
+        return []
 
     if nested_path is None:
         root_path = snapshot_path
@@ -390,7 +396,7 @@ def is_model_deprecated(
 
     if not os.path.isfile(klass_config_path):
         print(f"malformed diffusers repository for model {klass_config_path}")
-        return False
+        return []
 
     with open(klass_config_path) as f:
         klass_config: dict = json.load(f)
@@ -400,56 +406,59 @@ def is_model_deprecated(
     if "architectures" in klass_config and klass_config["architectures"] == [
         "CLIPTextModel"
     ]:
-        return False
+        return []
 
     down_block_types = klass_config.get("down_block_types", None)
     up_block_types = klass_config.get("up_block_types", None)
 
-    if klass_name == "VQModel":
-        # is always deprecated because of the encoder and decoder mid block
-        return True
-    elif klass_name == "AutoencoderKL":
-        # is always deprecated because of the encoder and decoder mid block
-        return True
-    elif klass_name == "UNet2DModel":
-        if down_block_types is None:
-            # The default block types have deprecated attention blocks
-            return True
+    deprecated_blocks = set()
 
-        for down_block_type in down_block_types:
-            if down_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
-                return True
-
-        if up_block_types is None:
-            # The default block types have deprecated attention blocks
-            return True
-
-        for up_block_type in up_block_types:
-            if up_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
-                return True
-
-        return False
-    elif klass_name == "UNet2DConditionModel":
-        if down_block_types is not None:
-            for down_block_type in down_block_types:
-                if down_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
-                    return True
-
+    def check_up_blocks():
         if up_block_types is not None:
             for up_block_type in up_block_types:
                 if up_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
-                    return True
+                    deprecated_blocks.add(up_block_type)
 
-        return False
+    def check_down_blocks():
+        if down_block_types is not None:
+            for down_block_type in down_block_types:
+                if down_block_type in BLOCKS_WITH_DEPRECATED_ATTENTION:
+                    deprecated_blocks.add(down_block_type)
+
+    if klass_name == "VQModel":
+        # is always deprecated because of the encoder and decoder mid block
+        deprecated_blocks.add("UNetMidBlock2D")
+
+        check_up_blocks()
+        check_down_blocks()
+    elif klass_name == "AutoencoderKL":
+        # is always deprecated because of the encoder and decoder mid block
+        deprecated_blocks.add("UNetMidBlock2D")
+
+        check_up_blocks()
+        check_down_blocks()
+    elif klass_name == "UNet2DModel":
+        if down_block_types is None:
+            deprecated_blocks.add("AttnDownBlock2D")
+        else:
+            check_down_blocks()
+
+        if up_block_types is None:
+            deprecated_blocks.add("AttnUpBlock2D")
+        else:
+            check_up_blocks()
+    elif klass_name == "UNet2DConditionModel":
+        check_up_blocks()
+        check_down_blocks()
     elif klass_name is None:
-        if is_model_1d_unet(
+        if not is_model_1d_unet(
             down_block_types=down_block_types, up_block_types=up_block_types
         ):
-            return False
-
-        assert False
+            assert False
     else:
         assert False
+
+    return list(deprecated_blocks)
 
 
 def is_model_1d_unet(*args, down_block_types, up_block_types):
