@@ -247,7 +247,7 @@ def diffusers_hub_uploads(*args, api, skip_hub_ids):
 
         hub_upload_ids.append(hub_id)
 
-        if "lora" in diffusers_model.tags:
+        if "lora" in diffusers_model.tags or "Lora" in diffusers_model.tags:
             tagged_lora_upload_ids.append(hub_id)
 
     return hub_upload_ids, tagged_lora_upload_ids
@@ -289,10 +289,24 @@ def check_is_empty_repo(repo_files):
 
         if (
             file != ".gitattributes"
-            and file != "README.md"
             and file_extension != ".ckpt"
             and file_extension != ".png"
             and file_extension != ".jpg"
+            and file_extension != ".jpeg"
+            and file_extension != ".safetensors"
+            and file_extension != ".safetensore"
+            and file_extension != ".zip"
+            and file_extension != ".pt"
+            and file_extension != ".bin"
+            and file_extension != ".txt"
+            and file_extension != ".yaml"
+            and file_extension != ".yml"
+            and file_extension != ".pkl"
+            and file_extension != ".sh"
+            and file_extension != ".exe"
+            and file_extension != ".md"
+            and file_extension != ".wav"
+            and file_extension != ".pkl"
         ):
             return False
 
