@@ -58,6 +58,8 @@ def parse_args():
         default=None,
     )
 
+    parser.add_argument("--check_repo", required=False, type=str, default=None)
+
     args = parser.parse_args()
 
     return args
@@ -73,7 +75,10 @@ def main(args):
 
     skip_hub_ids = set(skip_hub_ids)
 
-    if args.hub_uploads_load_from_file is None:
+    if args.check_repo is not None:
+        hub_upload_ids = [args.check_repo]
+        tagged_lora_upload_ids = []
+    elif args.hub_uploads_load_from_file is None:
         hub_upload_ids, tagged_lora_upload_ids = diffusers_hub_uploads(
             api=api, skip_hub_ids=skip_hub_ids
         )
@@ -118,13 +123,9 @@ def main(args):
 
         is_custom_pipeline_repository = "pipeline.py" in repo_files
 
-        is_empty_repository = (
-            len(repo_files) == 2
-            and ".gitattributes" in repo_files
-            and "README.md" in repo_files
-        )
+        is_empty_repo = check_is_empty_repo(repo_files)
 
-        if is_empty_repository:
+        if is_empty_repo:
             print(f"empty repository {hub_upload_id}")
             continue
 
@@ -280,6 +281,22 @@ def check_is_full_pipeline_repository(repo_files):
             is_full_pipeline_repository = True
 
     return is_full_pipeline_repository, nested_path
+
+
+def check_is_empty_repo(repo_files):
+    for file in repo_files:
+        file_extension = os.path.splitext(file)[1]
+
+        if (
+            file != ".gitattributes"
+            and file != "README.md"
+            and file_extension != ".ckpt"
+            and file_extension != ".png"
+            and file_extension != ".jpg"
+        ):
+            return False
+
+    return True
 
 
 def load_from_model_index(*args, snapshot_path, model_index_path, nested_path=None):
