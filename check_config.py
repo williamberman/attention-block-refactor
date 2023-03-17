@@ -122,16 +122,14 @@ def main(args):
             hub_upload_id
         ] = models_with_deprecated_attention_blocks
 
-    hub_uploads_with_deprecated_attention_blocks = json.dumps(
-        hub_uploads_with_deprecated_attention_blocks, indent=4
-    )
-
-    requires_license = json.dumps(requires_license, indent=4)
-
     if args.output is None:
         print("skipping writing outputs")
     else:
         print(f"writing outputs to {args.output}")
+
+        hub_uploads_with_deprecated_attention_blocks = json.dumps(
+            hub_uploads_with_deprecated_attention_blocks, indent=4
+        )
 
         with open(args.output, "w") as f:
             f.write(hub_uploads_with_deprecated_attention_blocks)
@@ -141,6 +139,8 @@ def main(args):
     else:
         print(f"writing requires license to {args.requires_license_output}")
 
+        requires_license = json.dumps(requires_license, indent=4)
+
         with open(args.requires_license_output, "w") as f:
             f.write(requires_license)
 
@@ -148,6 +148,8 @@ def main(args):
         print("skipping writing malformed repos")
     else:
         print(f"writing malformed repos to {args.malformed_repos_output}")
+
+        malformed_repos = json.dumps(malformed_repos, indent=4)
 
         with open(args.malformed_repos_output, "w") as f:
             f.write(malformed_repos)
@@ -228,6 +230,12 @@ def load_from_model_index(*args, snapshot_path, model_index_path, nested_path=No
 
     for model_key, value in model_index.items():
         if not isinstance(value, list):
+            continue
+
+        if len(value) != 2:
+            continue
+
+        if value == [None, None]:
             continue
 
         klass_name = value[1]
