@@ -23,6 +23,9 @@ def main(args):
     for diffusers_model in diffusers_models:
         model_id = diffusers_model.modelId
 
+        if 'keras' in diffusers_model.tags:
+            continue
+
         if "lora" in diffusers_model.tags or "Lora" in diffusers_model.tags:
             tagged_as_lora = True
         else:

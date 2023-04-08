@@ -1,12 +1,147 @@
 {
+    "fusing/karlo_unclip": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "decoder",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
     "kakaobrain/karlo-v1-alpha": [
         {
             "klass_name": "UNet2DConditionModel",
             "model_key": "decoder",
             "deprecated_blocks": [
-                "SimpleCrossAttnUpBlock2D",
+                "UNetMidBlock2DSimpleCrossAttn",
                 "SimpleCrossAttnDownBlock2D",
-                "UNetMidBlock2DSimpleCrossAttn"
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
+    "fusing/karlo-image-variations-diffusers": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "decoder",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
+    "kakaobrain/karlo-v1-alpha-image-variations": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "decoder",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
+    "diffusers/if": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "super_res_1_unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        },
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "super_res_2_unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        },
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
+    "diffusers/if-large": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "super_res_1_unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        },
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
+    "diffusers/if-medium": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "super_res_1_unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        },
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
+    "diffusers/IF-I-IF-v1.0": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
+    "diffusers/IF-II-L-v1.0": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
+            ]
+        }
+    ],
+    "diffusers/IF-III-L-v1.0": [
+        {
+            "klass_name": "UNet2DConditionModel",
+            "model_key": "unet",
+            "deprecated_blocks": [
+                "UNetMidBlock2DSimpleCrossAttn",
+                "SimpleCrossAttnDownBlock2D",
+                "SimpleCrossAttnUpBlock2D"
             ]
         }
     ]
