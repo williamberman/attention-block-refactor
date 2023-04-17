@@ -4,10 +4,22 @@ from huggingface_hub import HfApi, snapshot_download, list_repo_files
 from huggingface_hub.utils import HfHubHTTPError
 import json
 import os
+from pathlib import Path
 
-def main():
-    diffusers_repos = get_diffusers_repos()
+DIFFUSERS_REPOS = "hub_uploads.json"
+SKIP_FILE = "skip.json"
+ALTERNATIVE_ACT_FN = "alt_act_fn.json"
 
+def parse_args():
+    arg_parser = argparse.ArgumentParser()
+
+    arg_parser.add_argument("--save_diffusers_repos", required=False, action="store_true")
+
+    args = arg_parser.parse_args()
+
+    return args
+
+def main(diffusers_repos, skip_hub_ids):
     requires_license = []
     malformed_repos = []
     alternative_act_fn = []
@@ -17,6 +29,10 @@ def main():
         is_tagged_lora_repository = repo["tagged_as_lora"]
 
         print(f"checking hub upload: {hub_upload_id}")
+
+        if hub_upload_id in skip_hub_ids:
+            print(f"in skip list {hub_upload_id}")
+            continue
 
         try:
             repo_files = list_repo_files(hub_upload_id, token=True)
@@ -107,19 +123,23 @@ def main():
         else:
             assert False
 
-        if uses_silu is None:
+        if uses_silu == 'malformed':
+            # HACK - should be verified ahead of time
+            print(f"malformed repo: {hub_upload_id}")
+            malformed_repos.append(hub_upload_id)
+            continue
+        elif uses_silu is None:
             print(f"conditional unet activation function does not apply {hub_upload_id}")
         elif uses_silu == True:
             print(f"uses silu: {hub_upload_id}")
         elif uses_silu == False:
             print(f"uses alternative act_fn: {hub_upload_id}")
             alternative_act_fn.append(hub_upload_id)
-            break
         else:
             assert False
 
-
-
+    with open(ALTERNATIVE_ACT_FN, "w") as f:
+        json.dump(alternative_act_fn, f, indent=4)
 
 def get_diffusers_repos():
     api = HfApi()
@@ -211,11 +231,26 @@ def load_from_model_index(*args, snapshot_path, model_index_path, nested_path=No
 
         if nested_path is not None:
             root_path = os.path.join(snapshot_path, nested_path)
+
+            if os.path.isdir(os.path.join(root_path, model_key)):
+                klass_config_path = os.path.join(root_path, model_key, "config.json")
+            else:
+                klass_config_path = os.path.join(root_path, "config.json")
         else:
+            klass_config_path = None
+
+        # sometimes the nested path is incorrectly detected. Assume the root snapshot path in this case
+        if klass_config_path is None or not Path(klass_config_path).is_file():
             root_path = snapshot_path
 
-        if os.path.isdir(os.path.join(root_path, model_key)):
-            klass_config_path = os.path.join(root_path, model_key, "config.json")
+            if os.path.isdir(os.path.join(root_path, model_key)):
+                klass_config_path = os.path.join(root_path, model_key, "config.json")
+            else:
+                klass_config_path = os.path.join(root_path, "config.json")
+
+        # still can't find klass config. Assume malformed
+        if not Path(klass_config_path).is_file():
+            return 'malformed'
 
         uses_silu_ = does_unet_config_use_silu(klass_config_path)
 
@@ -272,4 +307,19 @@ def does_unet_config_use_silu(klass_config_path):
     return act_fn == "silu"
 
 if __name__ == "__main__":
-    main()
+    args = parse_args()
+
+    if args.save_diffusers_repos:
+        diffusers_repos = get_diffusers_repos()
+        with open(DIFFUSERS_REPOS, "w") as f:
+            json.dump(diffusers_repos, f, indent=4)
+    else:
+        with open(DIFFUSERS_REPOS, "r") as f:
+            diffusers_repos = json.load(f)
+
+        with open(SKIP_FILE, "r") as f:
+            skip_hub_ids = json.load(f)
+
+        skip_hub_ids = set(skip_hub_ids)
+
+        main(diffusers_repos, skip_hub_ids)

@@ -1,6 +1,38 @@
 [
     {
-        "hub_upload_id": "kakaobrain/karlo-v1-alpha",
+        "hub_upload_id": "stabilityai/sd-x2-latent-upscaler",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "YiYiXu/latent-upscaler",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "alfredplpl/x2-latent-upscaler-for-anime",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "diffusers/if",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "diffusers/if-large",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "diffusers/if-medium",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "diffusers/IF-I-IF-v1.0",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "diffusers/IF-II-L-v1.0",
+        "tagged_as_lora": false
+    },
+    {
+        "hub_upload_id": "diffusers/IF-III-L-v1.0",
         "tagged_as_lora": false
     }
 ]

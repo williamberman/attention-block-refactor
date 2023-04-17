@@ -1,0 +1,9 @@
+[
+    "stabilityai/sd-x2-latent-upscaler",
+    "YiYiXu/latent-upscaler",
+    "alfredplpl/x2-latent-upscaler-for-anime",
+    "diffusers/if",
+    "diffusers/IF-I-IF-v1.0",
+    "diffusers/IF-II-L-v1.0",
+    "diffusers/IF-III-L-v1.0"
+]
